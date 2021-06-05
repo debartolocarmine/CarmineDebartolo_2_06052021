@@ -15,3 +15,67 @@ body{
 a{
     text-decoration: none;/*supprime le surlignement des liens*/
 }
+/* ------------------------------------HEADER---------------------------------------------*/
+
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-self: stretch;
+}
+#header #logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 80px;
+}
+#choise{
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    width: 20%;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-right: -750px;
+}
+#choise-activities-accomodation-1{
+    display: flex;
+    align-self: stretch;
+    align-items: flex-end;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+    font-weight: 500;
+    font-size: 13px; 
+    width: 50%;
+    padding-left: 12px;
+    color: black;
+}
+#choise-activities-accomodation-1:hover{
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+#choise-activities-accomodation-2{
+    display: flex;
+    align-self: stretch;
+    align-items: flex-end;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+    font-weight: 500;
+    font-size: 13px; 
+    width: 50%;
+    padding-left: 40px;
+    color: black;
+}
+#choise-activities-accomodation-2:hover{
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+#registration {
+   margin-top: 50px;
+   margin-right: 40px;
+    }
+#registration-link{
+    color:#0065FC;
+    font-weight: bold;
+    font-size: 13px;  
+}
