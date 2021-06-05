@@ -449,4 +449,244 @@ footer li{
     list-style-type: none;/* on annule la puce par défaut */
     margin-left: -41px;/*aligne le texte des liens sur les titres*/
 }
+/*-------------------------------------MEDIA QUERIES-----------------------------------------*/
+@media screen and  (min-width: 0px) and (max-width: 460px) {
+    /*--------------------BODY-----------------------------------------------*/
+    #dimension{
+        margin: 0px;
+    }
+    /*--------------------HEADER---------------------------------------------*/
+    #header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-self: stretch;
+    }
+    #header #logo {
+        display: flex;
+        align-items: center;
+        margin-left: 18px;
+        margin-right: 80px;
+        margin-top: 18px;
+    }
+    #choise {
+        display: flex;
+        align-self: stretch;
+        justify-content: space-around;
+        width: 100%;
+        height: 70px;
+        margin-bottom: 30px;
+        margin-right: 0px;
+        
+    }
+    #registration {
+        position: absolute;
+        margin-right: -404px;
+        margin-top: 40px;
+        margin-left: 276px;
+    }
+    #registration-link {
+        color: #0065FC;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #choise {
+        display: flex;
+        align-self: stretch;
+        justify-content: space-around;
+        width: 100%;
+        height: 70px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    #choise-activities-accomodation-1{
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        border-top: 3px transparent solid;
+        border-bottom: 3px #F2F2F2 solid;
+        font-weight: 500;
+        font-size: 15px; 
+        width: 50%;
+        padding-left: 45px;
+    }
+    #choise-activities-accomodation-2{
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        border-top: 3px transparent solid;
+        border-bottom: 3px #F2F2F2 solid;
+        font-weight: 500;
+        font-size: 15px; 
+        width: 50%;
+        padding-left: 65px;
+    }
+    #choise-activities-accomodation-1:hover{
+        
+        border-top: transparent;
+        border-bottom: 3px #0065FC solid; ;
+    }
+    #choise-activities-accomodation-2:hover{
+
+        border-top: transparent;
+        border-bottom: 3px #0065FC solid; ;
+    }
+    /*--------------------NAV------------------------------------------------*/
+    h1{
+        margin: 15px;
+        font-size: 25px;
+    }
+    #ph1{
+      margin-bottom: 30px;
+    }
+    #search input {
+        height: 49px;
+        width: 247px;
+        border: 2px solid rgba(230, 230, 230, .5);
+        margin-right: -15px;
+    }
+    #desktop{
+        width: 100px;/*définit la largeur du boutton*/
+        height: 47px;/*définit la hauteur du boutton*/
+        color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
+        background-color: #0065FC;/*définit la couleur de fond boutton*/
+        border: 0;/*retire la bordure du boutton*/
+        border-radius: 0  15px  15px 0;/*définit les arrondis exterieur de la div*/
+        display: none;
+    }
+    #mobile{
+        width: 45px;/*définit la largeur du boutton*/
+        height: 47px;/*définit la hauteur du boutton*/
+        color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
+        background-color: #0065FC;/*définit la couleur de fond boutton*/
+        border: 0;/*retire la bordure du boutton*/
+        border-radius: 15px 15px 15px 15px;/*définit les arrondis exterieur de la div*/ 
+        display: inline;   
+    }
+    #filter-title {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        margin-right: 150px;
+    }
+    #money{
+        display: flex;/*donne a la div les attribut des flexbox*/
+        list-style-type: none;/* on annule la puce par défaut */
+        height: 30px; /*hauteur de la div*/
+        margin: 10px 10px 10px 2px ;/*marge avec les autres div*/
+        padding-right: 20px;/*marge interieure droite de la div*/
+        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+        border-radius: 30px;/*définit les arrondis exterieur de la div*/
+        align-items: center;/*aligne le texte du lien au centre de la div*/  
+    }
+    #child{
+        display: flex;/*donne a la div les attribut des flexbox*/
+        list-style-type: none;/* on annule la puce par défaut */
+        height: 30px; /*hauteur de la div*/
+        margin: 10px 0;/*marge avec les autres div*/
+        padding-right: 20px;/*marge interieure droite de la div*/
+        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+        border-radius: 30px;/*définit les arrondis exterieur de la div*/
+        align-items: center;/*aligne le texte du lien au centre de la div*/
+    }
+    #heart{
+        display: flex;/*donne a la div les attribut des flexbox*/
+        list-style-type: none;/* on annule la puce par défaut */
+        height: 30px; /*hauteur de la div*/
+        margin: 10px 0;/*marge avec les autres div*/
+        padding-right: 20px;/*marge interieure droite de la div*/
+        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+        border-radius: 30px;/*définit les arrondis exterieur de la div*/
+        align-items: center;/*aligne le texte du lien au centre de la div*/
+    }
+    #dog{
+        display: flex;/*donne a la div les attribut des flexbox*/
+        list-style-type: none;/* on annule la puce par défaut */
+        height: 30px; /*hauteur de la div*/
+        margin: 10px 0;/*marge avec les autres div*/
+        padding-right: 20px;/*marge interieure droite de la div*/
+        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+        border-radius: 30px;/*définit les arrondis exterieur de la div*/
+        align-items: center;/*aligne le texte du lien au centre de la div*/
+    }
+    /*--------------------SECTION-populaire-hébergement----------------------*/
+    #popular-accommodation{
+        display: flex;
+        flex-flow: column ;
+        justify-content: space-around;
+        width: 100%;   
+    }
+    /*--------------------SECTION-populaire----------------------------------*/
+    #popular{ 
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        padding-bottom: 20px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        width: 100%;
+    }
+    /*--------------------SECTION-hébergements-------------------------------*/
+    #accommodation{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    #accommodation .card {
+        border: 2px solid #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        margin: 10px 10px 10px 10px;
+        background-color: #FFFFFF;
+        box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        width: 100%;  
+    }
+    .v{
+        display: none;
+    }
+    .v2{
+        display: inline;
+    }
+
+  
+    /*--------------------SECTION-activités----------------------------------*/
+    #activities {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #activities-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .col{
+        width: 100%
+    }
+    /*--------------------FOOTER---------------------------------------------*/ 
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        padding: 30px;
+    }
+    footer div{
+        margin-right: 0px;
+    }
+    footer li {
+        list-style-type: none;
+        margin-left: -41px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    
+}
 
