@@ -79,3 +79,181 @@ a{
     font-weight: bold;
     font-size: 13px;  
 }
+/*-------------------------------------NAV--------------------------------------------------*/
+nav{
+    margin: 15px;
+}
+h1{
+    font-size: 22px;/*taille du titre*/
+    margin-left: 15px;    
+}
+#ph1{
+    margin-left: 15px;
+    font-weight: 500;
+}
+#search {
+    display: flex;/*donne a la forme(input)les attribut des flexbox par default en ligne"row" 
+                    en icluant la div avec le favicon*/
+    margin-bottom: 25px;
+
+}
+#search input{
+    height: 47px;/*hauteur du champ de recherche*/
+    width: 270px;/*largeur du champ de recherche*/
+    border: 2px solid rgba(230, 230, 230, .5); /*couleur de la bordure du champ de recherche*/
+    margin-right: -4px;/*réduit l'espace entre le boutton et le champ de recherche*/
+    background-color:transparent;
+}
+#map-marker {
+    display: flex;/*donne a la div les attribut des flexbox*/
+    float: left;/*La propriété float left indique que l'élément favicon doit être retiré du flux normal 
+    et doit être placé sur le côté gauche de son conteneur.*/
+    justify-content: center;/*place le favicon au milieu de la div*/
+    align-items: center;/*place le favicon au centre de la div*/
+    width: 45px;/*définit la largeur de la div pour inclure le favicon*/
+    height: 47px;/*définit la hauteur*/
+    border: 1px solid #F2F2F2;/*définit le style,la taille et la couleur de la bordure*/
+    border-radius: 15px 0px 0px 15px;/*définit les arrondis exterieur de la div*/
+    background-color: #F2F2F2;/*définit la couleur de la div*/
+}
+#desktop{
+    width: 100px;/*définit la largeur du boutton*/
+    height: 47px;/*définit la hauteur du boutton*/
+    color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
+    background-color: #0065FC;/*définit la couleur de fond boutton*/
+    border: 0;/*retire la bordure du boutton*/
+    border-radius: 0  15px  15px 0;/*définit les arrondis exterieur de la div*/
+    display: inline;
+}
+#mobile{
+    width: 45px;/*définit la largeur du boutton*/
+    height: 47px;/*définit la hauteur du boutton*/
+    color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
+    background-color: #0065FC;/*définit la couleur de fond boutton*/
+    border: 0;/*retire la bordure du boutton*/
+    border-radius: 15px 15px 15px 15px;/*définit les arrondis exterieur de la div*/ 
+    display: none;   
+}
+#filter{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    flex-wrap: wrap;/*permet au filtre d'aller a la ligne*/
+    padding: 0;/*aligne les filtres a gauche de la page*/
+}
+#filter a{
+    color: black;
+}
+#filter a:hover{
+    color: #0065FC;
+    font-style:italic;
+    
+}
+
+#filter-title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+#money{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    list-style-type: none;/* on annule la puce par défaut */
+    height: 35px; /*hauteur de la div*/
+    margin: 0 10px ;/*marge avec les autres div*/
+    padding-right: 20px;/*marge interieure droite de la div*/
+    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+    border-radius: 30px;/*définit les arrondis exterieur de la div*/
+    align-items: center;/*aligne le texte du lien au centre de la div*/ 
+    font-weight: bold; 
+}
+#money i{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    justify-content: center;/*aligne la favicon sur l'axe horizontal */
+    align-items: center;/*aligne la favicon sur l'axe vertical*/
+    background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
+    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
+    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
+    height: 35px;/*définit la hauteur*/
+    color: #0065FC;/*couleur de la favicon*/
+    margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
+}
+#child{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    list-style-type: none;/* on annule la puce par défaut */
+    height: 35px; /*hauteur de la div*/
+    margin: 0 10px;/*marge avec les autres div*/
+    padding-right: 20px;/*marge interieure droite de la div*/
+    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+    border-radius: 30px;/*définit les arrondis exterieur de la div*/
+    align-items: center;/*aligne le texte du lien au centre de la div*/
+    font-weight: bold;
+}
+#child i{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    justify-content: center;/*aligne la favicon sur l'axe horizontal */
+    align-items: center;/*aligne la favicon sur l'axe vertical*/
+    background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
+    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
+    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
+    height: 35px;/*définit la hauteur*/
+    color: #0065FC;/*couleur de la favicon*/
+    margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
+}
+#heart{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    list-style-type: none;/* on annule la puce par défaut */
+    height: 35px; /*hauteur de la div*/
+    margin: 0 10px;/*marge avec les autres div*/
+    padding-right: 20px;/*marge interieure droite de la div*/
+    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+    border-radius: 30px;/*définit les arrondis exterieur de la div*/
+    align-items: center;/*aligne le texte du lien au centre de la div*/
+    font-weight: bold;
+}
+#heart i{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    justify-content: center;/*aligne la favicon sur l'axe horizontal */
+    align-items: center;/*aligne la favicon sur l'axe vertical*/
+    background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
+    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
+    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
+    height: 35px;/*définit la hauteur*/
+    color: #0065FC;/*couleur de la favicon*/
+    margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
+}
+#dog{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    list-style-type: none;/* on annule la puce par défaut */
+    height: 35px; /*hauteur de la div*/
+    margin: 0 10px;/*marge avec les autres div*/
+    padding-right: 20px;/*marge interieure droite de la div*/
+    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+    border-radius: 30px;/*définit les arrondis exterieur de la div*/
+    align-items: center;/*aligne le texte du lien au centre de la div*/
+    font-weight: bold;
+}
+#dog i{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    justify-content: center;/*aligne la favicon sur l'axe horizontal */
+    align-items: center;/*aligne la favicon sur l'axe vertical*/
+    background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
+    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
+    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
+    height: 35px;/*définit la hauteur*/
+    color: #0065FC;/*couleur de la favicon*/
+    margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
+}
+#result{
+    display: flex;/*donne a la div les attribut des flexbox*/
+    align-items: center;/*aligne la favicon et le texte*/
+}
+
+div#info {
+    display: flex;/*donne a la div les attribut des flexbox*/
+    justify-content:center;/*aligne la favicon sur l'axe horizontal du cercle*/
+    align-items: center;/*aligne la favicon sur l'axe vertical du cercle*/
+    border: 2px solid #f2f2f2;/**/
+    border-radius: 100%;/**/
+    width: 30px;/**/
+    height: 25px;/**/
+    color: #0065FC;/**/
+    margin-right: 10px;/**/
+}
