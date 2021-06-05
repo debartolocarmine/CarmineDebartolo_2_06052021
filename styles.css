@@ -257,3 +257,32 @@ div#info {
     color: #0065FC;/**/
     margin-right: 10px;/**/
 }
+/*-----------------------------------SECTION-populaire-hébergement---------------------------------*/
+#popular-accommodation{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 25px;   
+}
+span.color-grey i{
+    font-size: x-small;
+}
+.color-grey{
+    color: rgb(180, 180, 180) ;
+}
+span.color-blue i {
+    font-size: x-small;
+}
+.color-blue{
+    color: #0065FC;
+}
+h5.card-title{
+    margin: 2px 0;
+}
+p.card-text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
