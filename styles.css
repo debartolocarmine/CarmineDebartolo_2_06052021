@@ -330,3 +330,55 @@ i.fas.fa-chart-line{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
+/*-----------------------------------DIV-hébergements--------------------------------------*/
+#accommodation{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 65%;
+}
+#accommodation-title{
+    margin-left: 17px;
+}
+#accommodation-card{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#accommodation .card {
+    border: 2px solid #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 29%;  
+}
+#accommodation .card-body{
+    margin: 10px;
+}
+#accommodation .card img{
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.v{
+    display: inline;
+}
+.v2{
+    display: none;
+}
+.v3{
+    display: none;
+}
