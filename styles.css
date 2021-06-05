@@ -286,3 +286,47 @@ p.card-text {
     margin-top: 2px;
     margin-bottom: 2px;
 }
+/*-----------------------------------DIV-populaire----------------------------------------*/
+#popular{
+   
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding-bottom: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 30%;
+}
+#popular-title {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 15px;
+}
+i.fas.fa-chart-line{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.card-pop{
+    border: 2px solid #f2f2f2;
+    display: flex;
+    padding: 4px;
+    margin: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 6px rgb(200, 200, 200);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; 
+}
+.card-body-pop{
+    margin: 10px;
+}
+.card-pop img{
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
