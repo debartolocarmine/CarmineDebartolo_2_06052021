@@ -1,0 +1,17 @@
+/*-------------------------------------HEAD----------------------------------------------*/
+
+* {
+	font-family: 'Raleway', sans-serif;/* police générale du site*/
+    font-size: 15px;
+}
+/*-------------------------------------BODY----------------------------------------------*/
+body{
+    margin: 0;
+}
+#dimension{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+a{
+    text-decoration: none;/*supprime le surlignement des liens*/
+}
