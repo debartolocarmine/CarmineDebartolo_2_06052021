@@ -436,3 +436,17 @@ i.fas.fa-chart-line{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+/*-------------------------------------FOOTER----------------------------------------------- */
+footer{
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: space-around;   
+}
+footer h3{
+    font-weight: 800;
+}
+footer li{
+    list-style-type: none;/* on annule la puce par défaut */
+    margin-left: -41px;/*aligne le texte des liens sur les titres*/
+}
+
