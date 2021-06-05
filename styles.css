@@ -382,3 +382,57 @@ i.fas.fa-chart-line{
 .v3{
     display: none;
 }
+/*------------------------------------SECTION-activités--------------------------------------*/
+#activities{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#activities-title{
+    margin-left: 17px;
+}
+#more{
+    margin: 17px;
+}
+.col{
+    width: 25%;
+}
+#col-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#col-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#activities-card{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+#activities .card {
+    border: 2px solid #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+}
+#activities .card-body{
+    margin: 10px;
+}
+#activities .card img{
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
