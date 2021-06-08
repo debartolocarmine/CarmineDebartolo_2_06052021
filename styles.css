@@ -2,90 +2,70 @@
 
 * {
 	font-family: 'Raleway', sans-serif;/* police générale du site*/
-    font-size: 15px;
 }
 /*-------------------------------------BODY----------------------------------------------*/
-body{
-    margin: 0;
-}
-#dimension{
+
+#dimensions{
     margin: 0 auto;
     max-width: 1280px;
 }
-a{
-    text-decoration: none;/*supprime le surlignement des liens*/
-}
 /* ------------------------------------HEADER---------------------------------------------*/
-
 #header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-self: stretch;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;   
+height: 65px;
 }
-#header #logo{
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 80px;
+#header a{
+text-decoration: none;
+}
+#logo{
+display: flex;
+margin-right: 750px;
+height: 50px;
+
 }
 #choise{
-    display: flex;
-    align-self: stretch;
-    justify-content: space-between;
-    width: 20%;
-    height: 70px;
-    margin-bottom: 20px;
-    margin-right: -750px;
+display: flex;
+align-self: stretch;
+width: 20%
 }
 #choise-activities-accomodation-1{
-    display: flex;
-    align-self: stretch;
-    align-items: flex-end;
-    border-top: 3px transparent solid;
-    border-bottom: 3px transparent solid;
-    font-weight: 500;
-    font-size: 13px; 
-    width: 50%;
-    padding-left: 12px;
-    color: black;
+display: flex;
+align-self: stretch;
+justify-content: center;
+align-items: flex-end ;
+border-top: 3px transparent solid;
+width: 50%
 }
 #choise-activities-accomodation-1:hover{
-    border-top: 3px #0065FC solid;
-    color: #0065FC;
+border-top: 3px #0065FC solid;
+color: #0065FC;
 }
 #choise-activities-accomodation-2{
-    display: flex;
-    align-self: stretch;
-    align-items: flex-end;
-    border-top: 3px transparent solid;
-    border-bottom: 3px transparent solid;
-    font-weight: 500;
-    font-size: 13px; 
-    width: 50%;
-    padding-left: 40px;
-    color: black;
+display: flex;
+align-self: stretch;
+justify-content: center;
+align-items: flex-end ;
+border-top: 3px transparent solid;
+width: 50%
 }
 #choise-activities-accomodation-2:hover{
-    border-top: 3px #0065FC solid;
-    color: #0065FC;
+border-top: 3px #0065FC solid;
+color: #0065FC;
 }
-#registration {
-   margin-top: 50px;
-   margin-right: 40px;
-    }
 #registration-link{
+    margin: 0px 40px;
     color:#0065FC;
     font-weight: bold;
-    font-size: 13px;  
-}
+    }
 /*-------------------------------------NAV--------------------------------------------------*/
 nav{
     margin: 15px;
 }
 h1{
     font-size: 22px;/*taille du titre*/
-    margin-left: 15px;    
+    margin: 50px 0px 0px 15px;
 }
 #ph1{
     margin-left: 15px;
@@ -265,6 +245,9 @@ div#info {
     width: 100%;
     margin-bottom: 25px;   
 }
+#popular-accommodation a{
+    text-decoration: none;
+}
 span.color-grey i{
     font-size: x-small;
 }
@@ -391,6 +374,9 @@ i.fas.fa-chart-line{
     flex-direction: column;
     width: 100%;
 }
+#activities a{
+    text-decoration: none;
+}
 #activities-title{
     margin-left: 17px;
 }
@@ -456,93 +442,74 @@ footer li{
     list-style-type: none;/* on annule la puce par défaut */
     margin-left: -41px;/*aligne le texte des liens sur les titres*/
 }
-/*-------------------------------------MEDIA QUERIES-----------------------------------------*/
-@media screen and  (min-width: 0px) and (max-width: 460px) {
-    /*--------------------BODY-----------------------------------------------*/
-    #dimension{
-        margin: 0px;
-    }
+
+
+
+@media screen and  (min-width: 0px) and (max-width: 385px) {
+
     /*--------------------HEADER---------------------------------------------*/
     #header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        align-self: stretch;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: flex-end;   
+    height: 100px;
     }
-    #header #logo {
-        display: flex;
-        align-items: center;
-        margin-left: 18px;
-        margin-right: 80px;
-        margin-top: 18px;
+    #logo{
+    position: absolute;
+    z-index: 6;
+    top: 25px;
+    right: 0;
+    left: 25px;
+    bottom: 0;
     }
-    #choise {
-        display: flex;
-        align-self: stretch;
-        justify-content: space-around;
-        width: 100%;
-        height: 70px;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        
+    #registration-link{
+    position: absolute;
+    z-index: 6;
+    top: 45px;
+    right: 0;
+    left: 250px;
+    bottom: 0;
+    color:#0065FC;
+    font-weight: bold;
+    font-size: 13px; 
     }
-    #registration {
-        position: absolute;
-        margin-right: -404px;
-        margin-top: 40px;
-        margin-left: 276px;
+    #choise{
+    display: flex;
+    align-self: stretch;
+    width: 100%
     }
-    #registration-link {
-        color: #0065FC;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    #choise {
-        display: flex;
-        align-self: stretch;
-        justify-content: space-around;
-        width: 100%;
-        height: 70px;
-        margin-bottom: 10px;
-        margin-right: 0px;
-    }
-
     #choise-activities-accomodation-1{
-        display: flex;
-        align-self: stretch;
-        align-items: center;
-        border-top: 3px transparent solid;
-        border-bottom: 3px #F2F2F2 solid;
-        font-weight: 500;
-        font-size: 15px; 
-        width: 50%;
-        padding-left: 45px;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-end ;
+    margin-top: 90px;
+    border-bottom: 3px transparent solid;
+    width: 100%
     }
     #choise-activities-accomodation-2{
-        display: flex;
-        align-self: stretch;
-        align-items: center;
-        border-top: 3px transparent solid;
-        border-bottom: 3px #F2F2F2 solid;
-        font-weight: 500;
-        font-size: 15px; 
-        width: 50%;
-        padding-left: 65px;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-end ;
+    margin-top: 90px;
+    border-bottom: 3px transparent solid;
+    width: 100%
     }
-    #choise-activities-accomodation-1:hover{
-        
-        border-top: transparent;
-        border-bottom: 3px #0065FC solid; ;
+    #choise-activities-accomodation-1:hover{    
+    border-top: transparent;
+    border-bottom: 3px #0065FC solid; ;
     }
     #choise-activities-accomodation-2:hover{
-
-        border-top: transparent;
-        border-bottom: 3px #0065FC solid; ;
+    border-top: transparent;
+    border-bottom: 3px #0065FC solid; ;
     }
-    /*--------------------NAV------------------------------------------------*/
+     /*--------------------NAV------------------------------------------------*/
     h1{
-        margin: 15px;
-        font-size: 25px;
+     margin: 40px 0px 0px 17px;
+     font-size: 23px;
     }
     #ph1{
       margin-bottom: 30px;
@@ -646,8 +613,9 @@ footer li{
         border: 2px solid #f2f2f2;
         display: flex;
         flex-direction: column;
+        margin:10px 5px;
      
-        margin-bottom: 10px;
+       
         background-color: #FFFFFF;
         box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
         -webkit-border-radius: 20px;
@@ -700,7 +668,7 @@ footer li{
         margin-top: 10px;
         font-weight: 500;
     }
-    
+
 }
 
  
@@ -715,14 +683,23 @@ footer li{
         font-size: 14px;
     }
     /*--------------------HEADER---------------------------------------------*/
-    #choise {
+    #header{
         display: flex;
-        align-self: stretch;
-        justify-content: space-between;
-        width: 36%;
-        height: 70px;
-        margin-bottom: 20px;
-        margin-right: -139px;
+        justify-content: flex-end;
+        align-items: flex-end;   
+        height: 65px;
+    }
+    #logo{
+    display: flex;
+    margin-right: 60px;
+    margin-left: 20px;
+    height: 60px;
+    
+    }
+    #choise{
+    display: flex;
+    align-self: stretch;
+    width: 60%
     }
     /*--------------------NAV------------------------------------------------*/
     #dog {
