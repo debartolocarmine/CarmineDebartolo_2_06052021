@@ -1,75 +1,109 @@
-/*-------------------------------------HEAD----------------------------------------------*/
+/*//////////////////////HEAD/////////////////////////////////*/
 
 * {
-	font-family: 'Raleway', sans-serif;/* police générale du site*/
+
+	font-family: 'Raleway', sans-serif;
+    font-size: 15px;
 }
-/*-------------------------------------BODY----------------------------------------------*/
+
+/*//////////////////////BODY/////////////////////////////////*/
 
 #dimensions{
-    margin: 0 auto;
+
+    margin:2px auto;
     max-width: 1280px;
 }
-/* ------------------------------------HEADER---------------------------------------------*/
-#header{
-display: flex;
-justify-content: flex-end;
-align-items: flex-end;   
-height: 65px;
+a{
+    text-decoration: none;
 }
-#header a{
-text-decoration: none;
+
+/*//////////////////////HEADER///////////////////////////////*/
+
+.header{
+
+    display: flex;
+    height: 70px;  
 }
-#logo{
-display: flex;
-margin-right: 750px;
-height: 50px;
+.header__nav{
+
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+}
+.header__nav--choise{
+
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center; 
+    width: 40%;
+   
+}
+.header__nav--accommodation{
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-end;   
+    border-top: 3px transparent solid;
+    font-weight: 600;
+    width: 50%; 
+}
+.header__nav--accommodation:hover{
+
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+.header__nav--activities{
+
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-end;   
+    border-top: 3px transparent solid;
+    font-weight: 600;
+    width: 50%; 
 
 }
-#choise{
-display: flex;
-align-self: stretch;
-width: 20%
+.header__nav--activities:hover{
+
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
 }
-#choise-activities-accomodation-1{
-display: flex;
-align-self: stretch;
-justify-content: center;
-align-items: flex-end ;
-border-top: 3px transparent solid;
-width: 50%
+.header__nav--registration{
+
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-end; 
 }
-#choise-activities-accomodation-1:hover{
-border-top: 3px #0065FC solid;
-color: #0065FC;
-}
-#choise-activities-accomodation-2{
-display: flex;
-align-self: stretch;
-justify-content: center;
-align-items: flex-end ;
-border-top: 3px transparent solid;
-width: 50%
-}
-#choise-activities-accomodation-2:hover{
-border-top: 3px #0065FC solid;
-color: #0065FC;
-}
-#registration-link{
-    margin: 0px 40px;
+.header__nav--registration a{
+
     color:#0065FC;
-    font-weight: bold;
-    }
-/*-------------------------------------NAV--------------------------------------------------*/
-nav{
-    margin: 15px;
+    font-weight: 800;
+
 }
-h1{
-    font-size: 22px;/*taille du titre*/
-    margin: 50px 0px 0px 15px;
+.header__logo{
+
+        position: absolute;
+        top: 45px;
+ 
 }
-#ph1{
-    margin-left: 15px;
-    font-weight: 500;
+
+/*//////////////////////SEARCH-BAR///////////////////////////////*/
+
+.search-bar{
+
+    margin: 30px 0px 0px 0px;
+}
+.search-bar h1{
+    
+    width: 88%;
+    font-size: 20px;
+    font-weight: 800;
+}
+.search-bar #ph1{
+    margin-top: -7px;
 }
 #search {
     display: flex;/*donne a la forme(input)les attribut des flexbox par default en ligne"row" 
@@ -84,7 +118,7 @@ h1{
     margin-right: -4px;/*réduit l'espace entre le boutton et le champ de recherche*/
     background-color:transparent;
 }
-#map-marker {
+#search__map-marker {
     display: flex;/*donne a la div les attribut des flexbox*/
     float: left;/*La propriété float left indique que l'élément favicon doit être retiré du flux normal 
     et doit être placé sur le côté gauche de son conteneur.*/
@@ -96,7 +130,7 @@ h1{
     border-radius: 15px 0px 0px 15px;/*définit les arrondis exterieur de la div*/
     background-color: #F2F2F2;/*définit la couleur de la div*/
 }
-#desktop{
+#search__button--desktop{
     width: 100px;/*définit la largeur du boutton*/
     height: 47px;/*définit la hauteur du boutton*/
     color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
@@ -105,7 +139,7 @@ h1{
     border-radius: 0  15px  15px 0;/*définit les arrondis exterieur de la div*/
     display: inline;
 }
-#mobile{
+#search__button--mobile{
     width: 45px;/*définit la largeur du boutton*/
     height: 47px;/*définit la hauteur du boutton*/
     color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
@@ -127,106 +161,44 @@ h1{
     font-style:italic;
     
 }
-
-#filter-title{
+#filter__title{
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-weight: 800;
 }
-#money{
+#filter__money, #filter__child, #filter__heart, #filter__dog{
     display: flex;/*donne a la div les attribut des flexbox*/
     list-style-type: none;/* on annule la puce par défaut */
-    height: 35px; /*hauteur de la div*/
+    height: 42px; /*hauteur de la div*/
     margin: 0 10px ;/*marge avec les autres div*/
     padding-right: 20px;/*marge interieure droite de la div*/
-    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
-    border-radius: 30px;/*définit les arrondis exterieur de la div*/
+    border: 2.5px solid #efeded;/*épaiseure,style et couleur de la bordure de la div*/
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
     align-items: center;/*aligne le texte du lien au centre de la div*/ 
     font-weight: bold; 
 }
-#money i{
+#filter__money i, #filter__child i, #filter__heart i, #filter__dog i{
     display: flex;/*donne a la div les attribut des flexbox*/
     justify-content: center;/*aligne la favicon sur l'axe horizontal */
     align-items: center;/*aligne la favicon sur l'axe vertical*/
     background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
-    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
-    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
-    height: 35px;/*définit la hauteur*/
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    width: 45px;;/*définit la largeur de la div pour inclure le favicon*/
+    height: 45px;/*définit la hauteur*/
     color: #0065FC;/*couleur de la favicon*/
     margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
 }
-#child{
-    display: flex;/*donne a la div les attribut des flexbox*/
-    list-style-type: none;/* on annule la puce par défaut */
-    height: 35px; /*hauteur de la div*/
-    margin: 0 10px;/*marge avec les autres div*/
-    padding-right: 20px;/*marge interieure droite de la div*/
-    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
-    border-radius: 30px;/*définit les arrondis exterieur de la div*/
-    align-items: center;/*aligne le texte du lien au centre de la div*/
-    font-weight: bold;
-}
-#child i{
-    display: flex;/*donne a la div les attribut des flexbox*/
-    justify-content: center;/*aligne la favicon sur l'axe horizontal */
-    align-items: center;/*aligne la favicon sur l'axe vertical*/
-    background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
-    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
-    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
-    height: 35px;/*définit la hauteur*/
-    color: #0065FC;/*couleur de la favicon*/
-    margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
-}
-#heart{
-    display: flex;/*donne a la div les attribut des flexbox*/
-    list-style-type: none;/* on annule la puce par défaut */
-    height: 35px; /*hauteur de la div*/
-    margin: 0 10px;/*marge avec les autres div*/
-    padding-right: 20px;/*marge interieure droite de la div*/
-    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
-    border-radius: 30px;/*définit les arrondis exterieur de la div*/
-    align-items: center;/*aligne le texte du lien au centre de la div*/
-    font-weight: bold;
-}
-#heart i{
-    display: flex;/*donne a la div les attribut des flexbox*/
-    justify-content: center;/*aligne la favicon sur l'axe horizontal */
-    align-items: center;/*aligne la favicon sur l'axe vertical*/
-    background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
-    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
-    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
-    height: 35px;/*définit la hauteur*/
-    color: #0065FC;/*couleur de la favicon*/
-    margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
-}
-#dog{
-    display: flex;/*donne a la div les attribut des flexbox*/
-    list-style-type: none;/* on annule la puce par défaut */
-    height: 35px; /*hauteur de la div*/
-    margin: 0 10px;/*marge avec les autres div*/
-    padding-right: 20px;/*marge interieure droite de la div*/
-    border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
-    border-radius: 30px;/*définit les arrondis exterieur de la div*/
-    align-items: center;/*aligne le texte du lien au centre de la div*/
-    font-weight: bold;
-}
-#dog i{
-    display: flex;/*donne a la div les attribut des flexbox*/
-    justify-content: center;/*aligne la favicon sur l'axe horizontal */
-    align-items: center;/*aligne la favicon sur l'axe vertical*/
-    background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
-    border-radius: 100%;/*définit les arrondis exterieur de la div pour la fav icon*/
-    width: 35px;;/*définit la largeur de la div pour inclure le favicon*/
-    height: 35px;/*définit la hauteur*/
-    color: #0065FC;/*couleur de la favicon*/
-    margin-right: 10px;/*défini l'espacement entre la div favicon et le texte du lien*/
-}
-#result{
+#filter__result{
     display: flex;/*donne a la div les attribut des flexbox*/
     align-items: center;/*aligne la favicon et le texte*/
+    margin-top: 20px;
 }
 
-div#info {
+#filter__info {
     display: flex;/*donne a la div les attribut des flexbox*/
     justify-content:center;/*aligne la favicon sur l'axe horizontal du cercle*/
     align-items: center;/*aligne la favicon sur l'axe vertical du cercle*/
@@ -237,11 +209,13 @@ div#info {
     color: #0065FC;/**/
     margin-right: 10px;/**/
 }
-/*-----------------------------------SECTION-populaire-hébergement---------------------------------*/
+
+/*//////////////////SECTION-populaire-hébergement//////////////////////*/
+
 #popular-accommodation{
     display: flex;
     flex-flow: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 25px;   
 }
@@ -269,7 +243,9 @@ p.card-text {
     margin-top: 2px;
     margin-bottom: 2px;
 }
-/*-----------------------------------DIV-populaire----------------------------------------*/
+
+/*/////////////////////DIV-popular-//////////////////////////////////*/
+
 #popular{
    
     display: flex;
@@ -279,9 +255,9 @@ p.card-text {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    width: 30%;
+    width: 33%;
 }
-#popular-title {
+#popular__title {
     display: flex;
     justify-content:space-between;
     margin: 0 15px;
@@ -291,7 +267,7 @@ i.fas.fa-chart-line{
     align-items: center;
     font-size: 25px;
 }
-.card-pop{
+.popular__card--pop{
     border: 2px solid #f2f2f2;
     display: flex;
     padding: 4px;
@@ -302,10 +278,10 @@ i.fas.fa-chart-line{
     -moz-border-radius: 20px;
     border-radius: 20px; 
 }
-.card-body-pop{
+.popular__card--body-pop{
     margin: 10px;
 }
-.card-pop img{
+.popular__card--pop img{
     -webkit-border-top-left-radius: 20px;
     -webkit-border-bottom-left-radius: 20px;
     -moz-border-radius-topleft: 20px;
@@ -314,7 +290,8 @@ i.fas.fa-chart-line{
     border-bottom-left-radius: 20px;
 }
 
-/*-----------------------------------DIV-hébergements--------------------------------------*/
+/*/////////////////////DIV-accommodation-//////////////////////////////////*/
+
 #accommodation{
     display: flex;
     flex-direction: column;
@@ -322,17 +299,17 @@ i.fas.fa-chart-line{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    width: 65%;
+    width: 66%;
 }
-#accommodation-title{
+#accommodation__title{
     margin-left: 17px;
 }
-#accommodation-card{
+#accommodation__card{
     display: flex;
     flex-wrap: wrap;
 
 }
-#accommodation .card {
+#accommodation .accommodation__card {
     border: 2px solid #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -345,10 +322,10 @@ i.fas.fa-chart-line{
     border-radius: 20px;
     width: 90%;  
 }
-#accommodation .card-body{
+#accommodation .accommodation__card-body{
     margin: 10px;
 }
-#accommodation .card img{
+#accommodation .accommodation__card img{
     -webkit-border-top-left-radius: 20px;
     -webkit-border-top-right-radius: 20px;
     -moz-border-radius-topleft: 20px;
@@ -356,7 +333,7 @@ i.fas.fa-chart-line{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-#more{
+#accommodation-more{
     margin: 17px ;
 }
 .v{
@@ -368,7 +345,9 @@ i.fas.fa-chart-line{
 .v3{
     display: none;
 }
-/*------------------------------------SECTION-activités--------------------------------------*/
+
+/*/////////////////////SECTION-activities//////////////////////////////////*/
+
 #activities{
     display: flex;
     flex-direction: column;
@@ -377,29 +356,29 @@ i.fas.fa-chart-line{
 #activities a{
     text-decoration: none;
 }
-#activities-title{
+#activities__title{
     margin-left: 17px;
 }
 
-.col{
+.activities__col{
     width: 25%;
 }
-#col-2{
+#activities__col-2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#col-4{
+#activities__col-4{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#activities-card{
+#activities__card{
     display: flex;
     justify-content: space-around;
     margin-bottom: 35px;
 }
-#activities .card {
+#activities .activities__card {
     border: 2px solid #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -412,10 +391,10 @@ i.fas.fa-chart-line{
     border-radius: 20px;
 
 }
-#activities .card-body{
+#activities .activities__card-body{
     margin: 10px;
 }
-#activities .card img{
+#activities .activities__card img{
     -webkit-border-top-left-radius: 20px;
     -webkit-border-top-right-radius: 20px;
     -moz-border-radius-topleft: 20px;
@@ -423,7 +402,9 @@ i.fas.fa-chart-line{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-/*-------------------------------------FOOTER----------------------------------------------- */
+
+/*//////////////////////FOOTER/////////////////////////////////*/
+
 footer{
     display: flex;
     justify-content:space-around;
@@ -443,76 +424,93 @@ footer li{
     margin-left: -41px;/*aligne le texte des liens sur les titres*/
 }
 
+@media screen and (max-width: 380px){
 
+/*//////////////////////BODY/////////////////////////////////*/
 
-@media screen and  (min-width: 0px) and (max-width: 385px) {
+    #dimensions{
 
-    /*--------------------HEADER---------------------------------------------*/
-    #header{
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: flex-end;   
-    height: 100px;
+        margin: 0px auto;
+        max-width: 380px;
+        
     }
-    #logo{
-    position: absolute;
-    z-index: 6;
-    top: 25px;
-    right: 0;
-    left: 25px;
-    bottom: 0;
+
+/*//////////////////////HEADER///////////////////////////////*/
+
+    .header__logo{
+
+        position: absolute;
+        top: 30px;
+        left: 22px;
+    } 
+    .header__nav--choise{
+
+        width: 100%;
+        height: 130px;
+        border-bottom: 2px #F2F2F2 solid;
+
     }
-    #registration-link{
-    position: absolute;
-    z-index: 6;
-    top: 45px;
-    right: 0;
-    left: 250px;
-    bottom: 0;
-    color:#0065FC;
-    font-weight: bold;
-    font-size: 13px; 
+    .header__nav--accommodation{
+        display: flex;
+        align-self: stretch;
+        justify-content: center;
+        align-items: flex-end ;
+        margin-top: 90px;
+        padding-bottom: 10px;
+        border-bottom: 3px transparent solid;
+        width: 100%
     }
-    #choise{
-    display: flex;
-    align-self: stretch;
-    width: 100%
+    .header__nav--accommodation:hover{
+        
+        border-top: transparent;
+        border-bottom: 3px #0065FC solid; ;
+      
     }
-    #choise-activities-accomodation-1{
-    display: flex;
-    align-self: stretch;
-    justify-content: center;
-    align-items: flex-end ;
-    margin-top: 90px;
-    border-bottom: 3px transparent solid;
-    width: 100%
+    .header__nav--activities{
+    
+        display: flex;
+        align-self: stretch;
+        justify-content: center;
+        align-items: flex-end ;
+        margin-top: 90px;
+        padding-bottom: 10px;
+        border-bottom: 3px transparent solid;
+        width: 100%    
+    
     }
-    #choise-activities-accomodation-2{
-    display: flex;
-    align-self: stretch;
-    justify-content: center;
-    align-items: flex-end ;
-    margin-top: 90px;
-    border-bottom: 3px transparent solid;
-    width: 100%
+    .header__nav--activities:hover{
+    
+        border-top: transparent;
+        border-bottom: 3px #0065FC solid; ;
     }
-    #choise-activities-accomodation-1:hover{    
-    border-top: transparent;
-    border-bottom: 3px #0065FC solid; ;
+    .header__nav--registration{
+        
+        position: absolute;
+        top: 50px;
+        right: 22px;
     }
-    #choise-activities-accomodation-2:hover{
-    border-top: transparent;
-    border-bottom: 3px #0065FC solid; ;
+   
+/*//////////////////////SEARCH-BAR///////////////////////////////*/
+
+    .search-bar{
+
+        margin: 80px 15px 15px 15px;
     }
-     /*--------------------NAV------------------------------------------------*/
-    h1{
-     margin: 40px 0px 0px 17px;
-     font-size: 23px;
+    .search-bar h1{
+        
+        width: 88%;
+        font-size: 20px;
+        font-weight: 800;
     }
-    #ph1{
-      margin-bottom: 30px;
+    .search-bar #ph1{
+        margin-top: -7px;
+    }
+    #search {
+        display: flex;/*donne a la forme(input)les attribut des flexbox par default en ligne"row" 
+                        en icluant la div avec le favicon*/
+        margin-top: 30px;
+        margin-bottom: 25px;
+
     }
     #search input {
         height: 49px;
@@ -520,7 +518,7 @@ footer li{
         border: 2px solid rgba(230, 230, 230, .5);
         margin-right: -15px;
     }
-    #desktop{
+    #search__button--desktop{
         width: 100px;/*définit la largeur du boutton*/
         height: 47px;/*définit la hauteur du boutton*/
         color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
@@ -529,7 +527,7 @@ footer li{
         border-radius: 0  15px  15px 0;/*définit les arrondis exterieur de la div*/
         display: none;
     }
-    #mobile{
+    #search__button--mobile{
         width: 45px;/*définit la largeur du boutton*/
         height: 47px;/*définit la hauteur du boutton*/
         color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
@@ -538,60 +536,51 @@ footer li{
         border-radius: 15px 15px 15px 15px;/*définit les arrondis exterieur de la div*/ 
         display: inline;   
     }
-    #filter-title {
+    #filter__title {
         display: flex;
         align-items: center;
         font-weight: bold;
         margin-right: 150px;
+        margin-bottom: 10px;
+        font-weight: 800;
+    
     }
-    #money{
+    #filter__money{
         display: flex;/*donne a la div les attribut des flexbox*/
         list-style-type: none;/* on annule la puce par défaut */
-        height: 30px; /*hauteur de la div*/
-        margin: 10px 10px 10px 2px ;/*marge avec les autres div*/
+        margin: 5px 10px 5px 2px ;/*marge avec les autres div*/
         padding-right: 20px;/*marge interieure droite de la div*/
-        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+        border: 2.5px solid #efeded;/*épaiseure,style et couleur de la bordure de la div*/
         border-radius: 30px;/*définit les arrondis exterieur de la div*/
         align-items: center;/*aligne le texte du lien au centre de la div*/  
     }
-    #child{
+    #filter__child, #filter__heart, #filter__dog{
         display: flex;/*donne a la div les attribut des flexbox*/
         list-style-type: none;/* on annule la puce par défaut */
-        height: 30px; /*hauteur de la div*/
-        margin: 10px 0;/*marge avec les autres div*/
+        margin: 5px 0;/*marge avec les autres div*/
         padding-right: 20px;/*marge interieure droite de la div*/
-        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
+        border: 3px solid #efeded;/*épaiseure,style et couleur de la bordure de la div*/
         border-radius: 30px;/*définit les arrondis exterieur de la div*/
-        align-items: center;/*aligne le texte du lien au centre de la div*/
+        align-items: center;/*aligne le texte du lien au centre de la div*/ 
     }
-    #heart{
+
+    #filter__result{
         display: flex;/*donne a la div les attribut des flexbox*/
-        list-style-type: none;/* on annule la puce par défaut */
-        height: 30px; /*hauteur de la div*/
-        margin: 10px 0;/*marge avec les autres div*/
-        padding-right: 20px;/*marge interieure droite de la div*/
-        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
-        border-radius: 30px;/*définit les arrondis exterieur de la div*/
-        align-items: center;/*aligne le texte du lien au centre de la div*/
+        align-items: center;/*aligne la favicon et le texte*/
+        margin-top: 10px;
     }
-    #dog{
-        display: flex;/*donne a la div les attribut des flexbox*/
-        list-style-type: none;/* on annule la puce par défaut */
-        height: 30px; /*hauteur de la div*/
-        margin: 10px 0;/*marge avec les autres div*/
-        padding-right: 20px;/*marge interieure droite de la div*/
-        border: 2px solid #f2f2f2;/*épaiseure,style et couleur de la bordure de la div*/
-        border-radius: 30px;/*définit les arrondis exterieur de la div*/
-        align-items: center;/*aligne le texte du lien au centre de la div*/
-    }
-    /*--------------------SECTION-populaire-hébergement----------------------*/
+
+/*//////////////////SECTION-popular-accommodation//////////////////////*/
+
     #popular-accommodation{
         display: flex;
         flex-flow: column ;
         justify-content: space-around;
         width: 100%;   
     }
-    /*--------------------SECTION-populaire----------------------------------*/
+
+/*/////////////////////DIV-popular-//////////////////////////////////*/
+
     #popular{ 
         display: flex;
         flex-direction: column;
@@ -602,20 +591,19 @@ footer li{
         border-radius: 0px;
         width: 100%;
     }
-    /*--------------------SECTION-hébergements-------------------------------*/
+
+/*/////////////////////DIV-accommodation-//////////////////////////////////*/
     #accommodation{
         display: flex;
         flex-direction: column;
         background-color: transparent;
         width: 100%;
     }
-    #accommodation .card {
+    #accommodation .accommodation__card {
         border: 2px solid #f2f2f2;
         display: flex;
         flex-direction: column;
-        margin:10px 5px;
-     
-       
+        margin:10px 9px;
         background-color: #FFFFFF;
         box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
         -webkit-border-radius: 20px;
@@ -623,7 +611,7 @@ footer li{
         border-radius: 20px;
         width: 96%; 
     }
-    #more{
+    #accomodation-more{
         margin: 3px 0px 0px 17px;
     }
     .v{
@@ -633,26 +621,28 @@ footer li{
         display: inline;
     }
 
-  
-    /*--------------------SECTION-activités----------------------------------*/
+/*/////////////////////SECTION-activities//////////////////////////////////*/
+
     #activities {
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-bottom: -15px;
     }
-    #activities-card{
+    #activities__card{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-    #activities-title h3{
+    #activities__title h3{
         margin: 5px 0;
     }
-    .col{
+    .activities__col{
         width: 100%
     }
-    /*--------------------FOOTER---------------------------------------------*/ 
+
+/*//////////////////////FOOTER/////////////////////////////////*/
+
     footer {
         display: flex;
         flex-direction: column;
@@ -668,54 +658,72 @@ footer li{
         margin-top: 10px;
         font-weight: 500;
     }
-
 }
-
  
-@media screen and (min-width: 460px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1280px){
 
-    /*--------------------BODY-----------------------------------------------*/
-    #dimension{
-        margin: 0 auto;
-        max-width: 800px;
+/*//////////////////////BODY/////////////////////////////////////*/ 
+
+    #dimensions{
+        margin:2px auto;
+        max-width: 745px;
     }
     h5.card-title{
         font-size: 14px;
     }
-    /*--------------------HEADER---------------------------------------------*/
-    #header{
+
+/*//////////////////////HEADER///////////////////////////////////*/
+
+    .header{
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;   
-        height: 65px;
+        height: 70px;  
     }
-    #logo{
-    display: flex;
-    margin-right: 60px;
-    margin-left: 20px;
-    height: 60px;
-    
+    .header__logo{
+        position: absolute;
+        top: 35px;
     }
-    #choise{
-    display: flex;
-    align-self: stretch;
-    width: 60%
-    }
-    /*--------------------NAV------------------------------------------------*/
-    #dog {
+
+/*//////////////////////SEARCH-BAR///////////////////////////////*/
+
+    #filter{
         display: flex;
-        list-style-type: none;
-        height: 35px;
-        margin: 8px 0px 0 54px;
-        padding-right: 20px;
-        border: 2px solid #f2f2f2;
-        border-radius: 30px;
+        justify-content: space-between;
+    }
+    #filter__title{
+        display: flex;
         align-items: center;
-        font-weight: bold;
+        font-weight: 800;
     }
-    /*--------------------SECTION-populaire----------------------------------*/
+    #filter__money, #filter__child, #filter__heart, #filter__dog{
+ 
+        height: 30px; /*hauteur de la div*/
+        margin: 0 2px ;/*marge avec les autres div*/ 
+    }
+    #filter__money i, #filter__child i, #filter__heart i, #filter__dog i{
+        width: 30px;;/*définit la largeur de la div pour inclure le favicon*/
+        height: 30px;/*définit la hauteur*/
+    }
+    #filter__result{
+        display: flex;/*donne a la div les attribut des flexbox*/
+        align-items: center;/*aligne la favicon et le texte*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+/*//////////////////////SECTION-popular-accommodation////////////*/
+
+    #popular-accommodation{
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 25px;   
+    }
+
+/*//////////////////////DIV-popular-/////////////////////////////*/
+
     #popular{
-       
+    
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
@@ -723,68 +731,36 @@ footer li{
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
-        width: 30%;
+        width: 33%;
     }
-    .card-pop {
+    .popular__card--pop{
         border: 2px solid #f2f2f2;
         display: flex;
         flex-direction: column;
         padding: 4px;
-        margin: 10px;
+        margin: 22px 9px;
         background-color: #FFFFFF;
         box-shadow: 6px 4px 6px rgb(200 200 200);
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
-        margin-top: 15px;
+        margin-top: 1px;
     }
-    .card-pop img{
+
+    .popular__card--pop img{
         -webkit-border-top-left-radius: 0px;
         -webkit-border-bottom-left-radius: 0px;
         -moz-border-radius-topleft: 0px;
         -moz-border-radius-bottomleft: 0px;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
-    
-    
+
         -webkit-border-top-left-radius: 20px;
         -webkit-border-top-right-radius: 20px;
         -moz-border-radius-topleft: 20px;
         -moz-border-radius-topright: 20px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-    }
-    /*--------------------SECTION-hébergements-------------------------------*/
-    #accommodation {
-        display: flex;
-        flex-direction: column;
-        background-color: #F2F2F2;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        width: 65%;
-    }
-    #accommodation-card {
-        display: flex;
-        flex-wrap: wrap;
-       justify-content: space-around;
-    }
-    #accommodation .card {
-        border: 2px solid #f2f2f2;
-        display: flex;
-        flex-direction: column;
-        padding: 4px;
-        margin: 10px;
-        background-color: #FFFFFF;
-        box-shadow: 6px 4px 6px rgb(115 115 115 / 15%);
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        width: 85%;
-    }
-    #accommodation a {
-        text-decoration: none;
-        width: 50%;
     }
     .v{
         display: none;
@@ -795,10 +771,32 @@ footer li{
     .v3{
         display: inline;
     }
-    
-    /*--------------------SECTION-activités----------------------------------*/
-    #activities-card h5.card-title{
-        font-size: 9px;
+/*//////////////////////DIV-accommodation-///////////////////////*/
+
+    #accommodation{
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        width: 66%;
     }
-    /*--------------------FOOTER---------------------------------------------*/ 
+    #accommodation a{
+        width: 49%;
+        display: flex;
+    }
+
+/*//////////////////////SECTION-activities///////////////////////*/
+
+    #activities .activities__card {
+        margin: 4px;    
+    }
+    #activities__card h5.card-title{
+        font-size: 10px;
+        margin: 0px 0px;
+    }
+
+/*//////////////////////FOOTER///////////////////////////////////*/
 }
+
