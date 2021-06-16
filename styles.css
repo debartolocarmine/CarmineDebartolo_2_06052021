@@ -112,12 +112,13 @@ a{
 
 }
 #search input{
-    height: 47px;/*hauteur du champ de recherche*/
+    height: 45px;/*hauteur du champ de recherche*/
     width: 270px;/*largeur du champ de recherche*/
     border: 2px solid rgba(230, 230, 230, .5); /*couleur de la bordure du champ de recherche*/
     margin-right: -4px;/*réduit l'espace entre le boutton et le champ de recherche*/
     background-color:transparent;
 }
+
 #search__map-marker {
     display: flex;/*donne a la div les attribut des flexbox*/
     float: left;/*La propriété float left indique que l'élément favicon doit être retiré du flux normal 
@@ -125,14 +126,14 @@ a{
     justify-content: center;/*place le favicon au milieu de la div*/
     align-items: center;/*place le favicon au centre de la div*/
     width: 45px;/*définit la largeur de la div pour inclure le favicon*/
-    height: 47px;/*définit la hauteur*/
+    height: 43px;/*définit la hauteur*/
     border: 1px solid #F2F2F2;/*définit le style,la taille et la couleur de la bordure*/
     border-radius: 15px 0px 0px 15px;/*définit les arrondis exterieur de la div*/
     background-color: #F2F2F2;/*définit la couleur de la div*/
 }
 #search__button--desktop{
     width: 100px;/*définit la largeur du boutton*/
-    height: 47px;/*définit la hauteur du boutton*/
+    height: 43px;/*définit la hauteur du boutton*/
     color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
     background-color: #0065FC;/*définit la couleur de fond boutton*/
     border: 0;/*retire la bordure du boutton*/
@@ -141,7 +142,7 @@ a{
 }
 #search__button--mobile{
     width: 45px;/*définit la largeur du boutton*/
-    height: 47px;/*définit la hauteur du boutton*/
+    height: 45px;/*définit la hauteur du boutton*/
     color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
     background-color: #0065FC;/*définit la couleur de fond boutton*/
     border: 0;/*retire la bordure du boutton*/
@@ -434,7 +435,7 @@ footer a{
     margin: 5px 0;
 }
 
-@media screen and (max-width: 380px){
+@media screen and (min-width: 0px) and (max-width: 768px){
 
 /*//////////////////////BODY/////////////////////////////////*/
 
@@ -451,7 +452,8 @@ footer a{
 
         position: absolute;
         top: 30px;
-        left: 22px;
+        margin-left: 15px;
+       
     } 
     .header__nav--choise{
 
@@ -497,7 +499,8 @@ footer a{
         
         position: absolute;
         top: 50px;
-        right: 22px;
+        margin-right: 20px;
+       
     }
    
 /*//////////////////////SEARCH-BAR///////////////////////////////*/
@@ -527,6 +530,9 @@ footer a{
         width: 247px;
         border: 2px solid rgba(230, 230, 230, .5);
         margin-right: -15px;
+    }
+    #search__map-marker{
+        height: 47px;
     }
     #search__button--desktop{
         width: 100px;/*définit la largeur du boutton*/
