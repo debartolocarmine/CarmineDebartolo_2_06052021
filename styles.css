@@ -416,20 +416,22 @@ i.fas.fa-chart-line{
 footer{
     display: flex;
     justify-content:space-around;
-    background-color: #F2F2F2;     
+    background-color: #F2F2F2;
+     
 }
 footer div {
     display: flex;
     flex-direction: column;
     width: 75%;
-    margin-left: 20px;
+
+    margin: 0 30px 30px 20px;
 }
 footer h3{
     font-weight: 800;
 }
-footer li{
-    list-style-type: none;/* on annule la puce par défaut */
-    margin-left: -41px;/*aligne le texte des liens sur les titres*/
+footer a{
+    color: black;
+    margin: 5px 0;
 }
 
 @media screen and (max-width: 380px){
@@ -656,15 +658,6 @@ footer li{
         flex-direction: column;
         background-color: #F2F2F2;
         padding: 30px;
-    }
-    footer div{
-        margin-right: 0px;
-    }
-    footer li {
-        list-style-type: none;
-        margin-left: -41px;
-        margin-top: 10px;
-        font-weight: 500;
     }
 }
  
