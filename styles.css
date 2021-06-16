@@ -156,11 +156,6 @@ a{
 #filter a{
     color: black;
 }
-#filter a:hover{
-    color: #0065FC;
-    font-style:italic;
-    
-}
 #filter__title{
     display: flex;
     align-items: center;
@@ -178,6 +173,19 @@ a{
     border-radius: 30px;
     align-items: center;/*aligne le texte du lien au centre de la div*/ 
     font-weight: bold; 
+}
+#filter__money:hover, #filter__child:hover, #filter__heart:hover, #filter__dog:hover{
+    background: #DEEBFF;
+    transition-duration: 0.3s;  
+}
+#filter__money:hover i, #filter__child:hover i, #filter__heart:hover i, #filter__dog:hover i{
+    background: #FFF;
+    transition-duration: 0.3s;
+    color: red;
+}
+#filter__money:hover a, #filter__child:hover a, #filter__heart:hover a, #filter__dog:hover a{
+    color: #0065FC;
+    font-style:italic;
 }
 #filter__money i, #filter__child i, #filter__heart i, #filter__dog i{
     display: flex;/*donne a la div les attribut des flexbox*/
