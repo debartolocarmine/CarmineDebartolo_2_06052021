@@ -1,12 +1,12 @@
-/*//////////////////////HEAD/////////////////////////////////*/
+
+/************************HEAD**********************************/
 
 * {
-
 	font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 
-/*//////////////////////BODY/////////////////////////////////*/
+/***********************BODY***********************************/
 
 #dimensions{
 
@@ -17,7 +17,7 @@ a{
     text-decoration: none;
 }
 
-/*//////////////////////HEADER///////////////////////////////*/
+/***********************HEADER*********************************/
 
 .header{
 
@@ -86,11 +86,12 @@ a{
 .header__logo{
 
         position: absolute;
-        top: 45px;
+        top: 35px;
+
  
 }
 
-/*//////////////////////SEARCH-BAR///////////////////////////////*/
+/**********************SEARCH-BAR******************************/
 
 .search-bar{
 
@@ -127,7 +128,7 @@ a{
     align-items: center;/*place le favicon au centre de la div*/
     width: 45px;/*définit la largeur de la div pour inclure le favicon*/
     height: 43px;/*définit la hauteur*/
-    border: 1px solid #F2F2F2;/*définit le style,la taille et la couleur de la bordure*/
+    border: 1px solid transparent;/*définit le style,la taille et la couleur de la bordure*/
     border-radius: 15px 0px 0px 15px;/*définit les arrondis exterieur de la div*/
     background-color: #F2F2F2;/*définit la couleur de la div*/
 }
@@ -169,8 +170,6 @@ a{
     margin: 0 10px ;/*marge avec les autres div*/
     padding-right: 20px;/*marge interieure droite de la div*/
     border: 2.5px solid #efeded;/*épaiseure,style et couleur de la bordure de la div*/
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
     border-radius: 30px;
     align-items: center;/*aligne le texte du lien au centre de la div*/ 
     font-weight: bold; 
@@ -193,8 +192,6 @@ a{
     justify-content: center;/*aligne la favicon sur l'axe horizontal */
     align-items: center;/*aligne la favicon sur l'axe vertical*/
     background-color: #DEEBFF;/*définit la couleur de fond pour la favicon*/
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
     border-radius: 30px;
     width: 45px;;/*définit la largeur de la div pour inclure le favicon*/
     height: 45px;/*définit la hauteur*/
@@ -219,7 +216,7 @@ a{
     margin-right: 10px;/**/
 }
 
-/*//////////////////SECTION-populaire-hébergement//////////////////////*/
+/******************SECTION-populaire-hébergement**************/
 
 #popular-accommodation{
     display: flex;
@@ -253,7 +250,7 @@ p.card-text {
     margin-bottom: 2px;
 }
 
-/*/////////////////////DIV-popular-//////////////////////////////////*/
+/*********************DIV-popular-****************************/
 
 #popular{
    
@@ -261,8 +258,6 @@ p.card-text {
     flex-direction: column;
     background-color: #F2F2F2;
     padding-bottom: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
     width: 33%;
 }
@@ -270,6 +265,9 @@ p.card-text {
     display: flex;
     justify-content:space-between;
     margin: 0 15px;
+}
+#popular__title h3{
+    
 }
 i.fas.fa-chart-line{
     display: flex;
@@ -283,30 +281,25 @@ i.fas.fa-chart-line{
     margin: 20px;
     background-color: #FFFFFF;
     box-shadow: 6px 4px 6px rgb(200, 200, 200);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px; 
 }
 .popular__card--body-pop{
     margin: 10px;
 }
+.popular__card--body-pop .card-text{
+    margin-bottom: 60px;
+}
 .popular__card--pop img{
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-bottom-left-radius: 20px;
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-bottomleft: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-/*/////////////////////DIV-accommodation-//////////////////////////////////*/
+/**********************DIV-accommodation***********************/
 
 #accommodation{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
     width: 66%;
 }
@@ -326,8 +319,6 @@ i.fas.fa-chart-line{
     margin: 0 0 30px 12px;
     background-color: #FFFFFF;
     box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
     width: 90%;  
 }
@@ -335,10 +326,6 @@ i.fas.fa-chart-line{
     margin: 10px;
 }
 #accommodation .accommodation__card img{
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-topright: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -355,7 +342,7 @@ i.fas.fa-chart-line{
     display: none;
 }
 
-/*/////////////////////SECTION-activities//////////////////////////////////*/
+/*********************SECTION-activities************************/
 
 #activities{
     display: flex;
@@ -395,8 +382,6 @@ i.fas.fa-chart-line{
     margin: 10px;
     background-color: #FFFFFF;
     box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
 
 }
@@ -404,15 +389,11 @@ i.fas.fa-chart-line{
     margin: 10px;
 }
 #activities .activities__card img{
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-topright: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-/*//////////////////////FOOTER/////////////////////////////////*/
+/************************FOOTER***********************************/
 
 footer{
     display: flex;
@@ -437,7 +418,7 @@ footer a{
 
 @media screen and (min-width: 0px) and (max-width: 768px){
 
-/*//////////////////////BODY/////////////////////////////////*/
+/***********************BODY*************************************/
 
     #dimensions{
 
@@ -446,7 +427,7 @@ footer a{
         
     }
 
-/*//////////////////////HEADER///////////////////////////////*/
+/***********************HEADER***********************************/
 
     .header__logo{
 
@@ -503,7 +484,7 @@ footer a{
        
     }
    
-/*//////////////////////SEARCH-BAR///////////////////////////////*/
+/***********************SEARCH-BAR*******************************/
 
     .search-bar{
 
@@ -586,7 +567,7 @@ footer a{
         margin-top: 10px;
     }
 
-/*//////////////////SECTION-popular-accommodation//////////////////////*/
+/********************SECTION-popular-accommodation***********************/
 
     #popular-accommodation{
         display: flex;
@@ -595,20 +576,18 @@ footer a{
         width: 100%;   
     }
 
-/*/////////////////////DIV-popular-//////////////////////////////////*/
+/***********************DIV-popular-*************************************/
 
     #popular{ 
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
         padding-bottom: 20px;
-        -webkit-border-radius: 0px;
-        -moz-border-radius: 0px;
         border-radius: 0px;
         width: 100%;
     }
 
-/*/////////////////////DIV-accommodation-//////////////////////////////////*/
+/**********************DIV-accommodation-********************************/
     #accommodation{
         display: flex;
         flex-direction: column;
@@ -622,8 +601,6 @@ footer a{
         margin:10px 9px;
         background-color: #FFFFFF;
         box-shadow: 6px 4px 6px rgba(115, 115, 115, 0.15);
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
         border-radius: 20px;
         width: 96%; 
     }
@@ -637,7 +614,7 @@ footer a{
         display: inline;
     }
 
-/*/////////////////////SECTION-activities//////////////////////////////////*/
+/**********************SECTION-activities********************************/
 
     #activities {
         display: flex;
@@ -657,7 +634,7 @@ footer a{
         width: 100%
     }
 
-/*//////////////////////FOOTER/////////////////////////////////*/
+/************************FOOTER*******************************************/
 
     footer {
         display: flex;
@@ -669,7 +646,7 @@ footer a{
  
 @media screen and (min-width: 768px) and (max-width: 1280px){
 
-/*//////////////////////BODY/////////////////////////////////////*/ 
+/************************BODY*********************************************/ 
 
     #dimensions{
         margin:2px auto;
@@ -679,7 +656,7 @@ footer a{
         font-size: 14px;
     }
 
-/*//////////////////////HEADER///////////////////////////////////*/
+/***********************HEADER********************************************/
 
     .header{
         display: flex;
@@ -690,7 +667,7 @@ footer a{
         top: 35px;
     }
 
-/*//////////////////////SEARCH-BAR///////////////////////////////*/
+/************************SEARCH-BAR***************************************/
 
     #filter{
         display: flex;
@@ -717,7 +694,7 @@ footer a{
         margin-bottom: 10px;
     }
 
-/*//////////////////////SECTION-popular-accommodation////////////*/
+/***********************SECTION-popular-accommodation*********************/
 
     #popular-accommodation{
         display: flex;
@@ -727,7 +704,7 @@ footer a{
         margin-bottom: 25px;   
     }
 
-/*//////////////////////DIV-popular-/////////////////////////////*/
+/***********************DIV-popular***************************************/
 
     #popular{
     
@@ -735,8 +712,6 @@ footer a{
         flex-direction: column;
         background-color: #F2F2F2;
         padding-bottom: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
         border-radius: 20px;
         width: 33%;
     }
@@ -748,24 +723,18 @@ footer a{
         margin: 22px 9px;
         background-color: #FFFFFF;
         box-shadow: 6px 4px 6px rgb(200 200 200);
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
         border-radius: 20px;
         margin-top: 1px;
     }
+    .popular__card--body-pop .card-text{
+        margin-bottom: 1px;
+    }
 
     .popular__card--pop img{
-        -webkit-border-top-left-radius: 0px;
-        -webkit-border-bottom-left-radius: 0px;
-        -moz-border-radius-topleft: 0px;
-        -moz-border-radius-bottomleft: 0px;
+
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
 
-        -webkit-border-top-left-radius: 20px;
-        -webkit-border-top-right-radius: 20px;
-        -moz-border-radius-topleft: 20px;
-        -moz-border-radius-topright: 20px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -778,14 +747,12 @@ footer a{
     .v3{
         display: inline;
     }
-/*//////////////////////DIV-accommodation-///////////////////////*/
+/***********************DIV-accommodation*********************************/
 
     #accommodation{
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
         border-radius: 20px;
         width: 66%;
     }
@@ -794,7 +761,7 @@ footer a{
         display: flex;
     }
 
-/*//////////////////////SECTION-activities///////////////////////*/
+/***********************SECTION-activities********************************/
 
     #activities .activities__card {
         margin: 4px;    
@@ -803,7 +770,5 @@ footer a{
         font-size: 10px;
         margin: 0px 0px;
     }
-
-/*//////////////////////FOOTER///////////////////////////////////*/
 }
 
