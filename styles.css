@@ -511,12 +511,12 @@ footer a{
     }
     #search input {
         height: 40px;
-        width: 247px;
+        width: 230px;
         border: 2px solid rgba(230, 230, 230, .5);
         margin-right: -15px;
     }
     #search__map-marker{
-        height: 44px;
+        height: 45px;
     }
     #search__button--desktop{
         width: 100px;/*définit la largeur du boutton*/
