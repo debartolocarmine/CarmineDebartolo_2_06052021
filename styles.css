@@ -37,7 +37,7 @@ a{
     justify-content: center;
     align-items: flex-end;
     text-align: center; 
-    width: 40%;
+    width: 31%;
    
 }
 .header__nav--accommodation{
@@ -113,11 +113,14 @@ a{
 
 }
 #search input{
-    height: 45px;/*hauteur du champ de recherche*/
+    height: 40px;/*hauteur du champ de recherche*/
     width: 270px;/*largeur du champ de recherche*/
     border: 2px solid rgba(230, 230, 230, .5); /*couleur de la bordure du champ de recherche*/
     margin-right: -4px;/*réduit l'espace entre le boutton et le champ de recherche*/
     background-color:transparent;
+}
+#search input:focus{
+    outline: none !important;/*changer la couleur de surbrillance de la bordure sur sur l'élément imput*/
 }
 
 #search__map-marker {
@@ -127,14 +130,14 @@ a{
     justify-content: center;/*place le favicon au milieu de la div*/
     align-items: center;/*place le favicon au centre de la div*/
     width: 45px;/*définit la largeur de la div pour inclure le favicon*/
-    height: 43px;/*définit la hauteur*/
+    height: 45px;/*définit la hauteur*/
     border: 1px solid transparent;/*définit le style,la taille et la couleur de la bordure*/
     border-radius: 15px 0px 0px 15px;/*définit les arrondis exterieur de la div*/
     background-color: #F2F2F2;/*définit la couleur de la div*/
 }
 #search__button--desktop{
     width: 100px;/*définit la largeur du boutton*/
-    height: 43px;/*définit la hauteur du boutton*/
+    height: 45px;/*définit la hauteur du boutton*/
     color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
     background-color: #0065FC;/*définit la couleur de fond boutton*/
     border: 0;/*retire la bordure du boutton*/
@@ -507,17 +510,17 @@ footer a{
 
     }
     #search input {
-        height: 49px;
+        height: 40px;
         width: 247px;
         border: 2px solid rgba(230, 230, 230, .5);
         margin-right: -15px;
     }
     #search__map-marker{
-        height: 47px;
+        height: 44px;
     }
     #search__button--desktop{
         width: 100px;/*définit la largeur du boutton*/
-        height: 47px;/*définit la hauteur du boutton*/
+        height: 45px;/*définit la hauteur du boutton*/
         color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
         background-color: #0065FC;/*définit la couleur de fond boutton*/
         border: 0;/*retire la bordure du boutton*/
@@ -526,7 +529,7 @@ footer a{
     }
     #search__button--mobile{
         width: 45px;/*définit la largeur du boutton*/
-        height: 47px;/*définit la hauteur du boutton*/
+        height: 45px;/*définit la hauteur du boutton*/
         color: #FFFFFF;/*définit la couleur de ce qui est écrit dans le boutton*/
         background-color: #0065FC;/*définit la couleur de fond boutton*/
         border: 0;/*retire la bordure du boutton*/
