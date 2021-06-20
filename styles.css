@@ -133,6 +133,9 @@ a{
 #search input:focus{
     outline: none !important;/*changer la couleur de surbrillance de la bordure sur sur l'élément imput*/
 }
+input::placeholder{
+    color :black;
+}
 
 #search__map-marker {
     display: flex;/*donne a la div les attribut des flexbox*/
@@ -501,6 +504,7 @@ footer a{
         font-size: 15px;
         font-weight: 800;
     }
+   
     #search__button--desktop{
         display: none;
     }
